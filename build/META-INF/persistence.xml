@@ -1,0 +1,12 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<!--
+		In this example, we're running in a simple Java SE virtual machine (VM) and don't have access to a
+		JTA transaction manager, so we set the transaction type to RESOURCE_LOCAL.
+	-->
+	<persistence-unit name="TestBristamaticHibernate" transaction-type="RESOURCE_LOCAL">
+	  <!-- Specify all entity classes to be scanned for annotations -->
+<!--		<class>com.baristamatic.entity.Recipe</class>-->
+<!--		<class>com.baristamatic.entity.RecipeEntry</class>-->
+<provider>org.hibernate.ejb.HibernatePersistence</provider>
+	</persistence-unit>
+</persistence>
